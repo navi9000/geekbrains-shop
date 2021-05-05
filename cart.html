@@ -10,8 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="css/scss-style.css">
-    <title>Product</title>
+    <title>Cart</title>
 </head>
 
 <body>
@@ -58,94 +59,57 @@
     </header>
 
     <main>
-        <!-- Product - New Arrivals -->
+        <!-- Cart - Shopping Cart -->
         <div class="catalog-arrivals">
-            <div class="container catalog-arrivals__flex">
-                <h1 class="catalog-arrivals__header">new arrivals</h1>
-                <p class="catalog-arrivals__breadcrumbs">home / men / <span class="theme-color breadcrumbs-bold">new
-                        arrivals</span></p>
+            <div class="container catalog-arrivals__flex cart-top">
+                <h1 class="catalog-arrivals__header">shopping cart</h1>
             </div>
         </div>
 
-        <div class="product">
-
-            <!-- Product - Top Photo -->
-            <div class="product-top">
-                <img src="img/product-image.jpg" alt="Product" class="product-top__img">
-                <div class="product-top__left">
-                    <img src="img/product-arrow.svg" alt="Arrow" class="product-top__left-img">
+        <!-- Cart - Main Content -->
+        <form class="container cart-flex">
+            <div class="cart-flex-left">
+                <div class="cart-flex-left__item">
+                    <img src="img/item3.jpg" alt="Photo 3" class="cart-flex-left__item-img">
+                    <h2 class="cart-flex-left__item-header">mango people<br>t-shirt</h2>
+                    <p class="cart-flex-left__item-price">Price: <span class="theme-color">$300</span></p>
+                    <p class="cart-flex-left__item-color">Color: Red</span></p>
+                    <p class="cart-flex-left__item-size">Size: XI</p>
+                    <p class="cart-flex-left__item-quantity">Quantity: <input type="number"
+                            class="cart-flex-left__item-quantity-input" value="2" min="0" max="9"></p>
+                    <img src="img/close-button.svg" alt="Close" class="cart-flex-left__item-close">
                 </div>
-                <div class="product-top__right">
-                    <img src="img/product-arrow.svg" alt="Arrow" class="product-top__right-img">
+                <div class="cart-flex-left__item">
+                    <img src="img/item7.jpg" alt="Photo 7" class="cart-flex-left__item-img">
+                    <h2 class="cart-flex-left__item-header">mango people<br>t-shirt</h2>
+                    <p class="cart-flex-left__item-price">Price: <span class="theme-color">$300</span></p>
+                    <p class="cart-flex-left__item-color">Color: Red</span></p>
+                    <p class="cart-flex-left__item-size">Size: XI</p>
+                    <p class="cart-flex-left__item-quantity">Quantity: <input type="number"
+                            class="cart-flex-left__item-quantity-input" value="2" min="0" max="9"></p>
+                    <img src="img/close-button.svg" alt="Close" class="cart-flex-left__item-close">
                 </div>
-            </div>
-
-            <!-- Product - Description -->
-            <div class="product-desc container">
-                <h2 class="product-desc__top-header">Women collection</h2>
-                <hr class="product-desc__top-hr">
-                <h3 class="product-desc__bottom-header">Moschino cheap and chic</h3>
-                <p class="product-desc__text">Compellingly actualize fully researched processes before proactive
-                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
-                    Completely visualize parallel core competencies rather than exceptional portals.</p>
-                <p class="product-desc__price">$561</p>
-                <hr class="product-desc__bottom-hr">
-                <div class="product-desc__menu">
-                    <p class="product-desc__menu-dropdown">Choose color<img src="img/arrow-down.svg" alt="Down"
-                            class="product-desc__menu-dropdown-icon"></p>
-                    <p class="product-desc__menu-dropdown">Choose size<img src="img/arrow-down.svg" alt="Down"
-                            class="product-desc__menu-dropdown-icon"></p>
-                    <p class="product-desc__menu-dropdown">Quantity<img src="img/arrow-down.svg" alt="Down"
-                            class="product-desc__menu-dropdown-icon"></p>
-                </div>
-                <img src="img/product-add-to-cart.svg" alt="Cart" class="product-desc__cart">
-            </div>
-
-        </div>
-
-        <!-- Product - Items -->
-        <div class="catalog-items">
-            <div class="container">
-                <div class="items-grid">
-                    <div class="items-grid-item">
-                        <div class="items__image-div">
-                            <img src="img/item4.jpg" alt="Item 4" class="items-grid-img">
-                            <div class="items-grid__hover-background">
-                            </div>
-                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
-                        </div>
-                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
-                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="items-grid-price">$52.00</p>
-                    </div>
-                    <div class="items-grid-item">
-                        <div class="items__image-div">
-                            <img src="img/item3.jpg" alt="Item 3" class="items-grid-img">
-                            <div class="items-grid__hover-background">
-                            </div>
-                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
-                        </div>
-                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
-                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="items-grid-price">$52.00</p>
-                    </div>
-                    <div class="items-grid-item product-hide">
-                        <div class="items__image-div">
-                            <img src="img/item6.jpg" alt="Item 6" class="items-grid-img">
-                            <div class="items-grid__hover-background">
-                            </div>
-                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
-                        </div>
-                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
-                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="items-grid-price">$52.00</p>
-                    </div>
+                <div class="cart-flex-left__buttons">
+                    <button type="button" class="cart-flex-left__buttons-btn">Clear shopping cart</button>
+                    <button type="button" class="cart-flex-left__buttons-btn">Continue shopping</button>
                 </div>
             </div>
-        </div>
+            <div class="cart-flex-right">
+                <div class="cart-flex-right__address">
+                    <h2 class="cart-flex-right__address-header">shipping address</h2>
+                    <input type="text" class="cart-flex-right__address-input" placeholder="Bangladesh">
+                    <input type="text" class="cart-flex-right__address-input" placeholder="State">
+                    <input type="text" class="cart-flex-right__address-input" placeholder="Postcode / ZIP">
+                    <button type="button" class="cart-flex-right__address-button">Get a quote</button>
+                </div>
+                <div class="cart-flex-right__submit">
+                    <h2 class="cart-flex-right__submit-subtotal">subtotal<span>$900</span></h2>
+                    <h2 class="cart-flex-right__submit-total">grand total<span class="theme-color">$900</span></h2>
+                    <hr class="cart-flex-right__submit-hr">
+                    <button class="cart-flex-right__submit-btn">proceed to checkout</button>
+                </div>
+            </div>
+        </form>
 
     </main>
 
