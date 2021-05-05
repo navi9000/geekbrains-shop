@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="css/scss-style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-flex">
+            <div class="header-left">
+                <img src="img/logo.svg" alt="Logo" class="header-item" id="logo">
+                <img src="img/search-icon.svg" alt="Search" class="header-item">
+            </div>
+            <div class="header-right">
+                <img src="img/menu-icon.svg" alt="Menu" class="header-item" onclick="showMenu();">
+                <img src="img/user-icon.svg" alt="User" class="header-item" id="user-icon">
+                <img src="img/cart-icon.svg" alt="Cart" class="header-item" id="cart">
+            </div>
+        </div>
+        <div class="hidden-menu hidden">
+            <img src="img/close-button.svg" alt="Close" class="menu-close" onclick="hideMenu();">
+            <h2 class="menu-header">Menu</h2>
+            <h3 class="menu-subheader">Men</h3>
+            <ul>
+                <li class="menu-list"><a href="#" class="menu-link">Accessories</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Bags</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Denim</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">T-Shirts</a></li>
+            </ul>
+            <h3 class="menu-subheader">Women</h3>
+            <ul>
+                <li class="menu-list"><a href="#" class="menu-link">Accessories</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Jackets & Coats</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Polos</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">T-Shirts</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Shirts</a></li>
+            </ul>
+            <h3 class="menu-subheader">Kids</h3>
+            <ul>
+                <li class="menu-list"><a href="#" class="menu-link">Accessories</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Jackets & Coats</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Polos</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">T-Shirts</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Shirts</a></li>
+                <li class="menu-list"><a href="#" class="menu-link">Bags</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Cart - Shopping Cart -->
+        <div class="catalog-arrivals">
+            <div class="container catalog-arrivals__flex cart-top">
+                <h1 class="catalog-arrivals__header">shopping cart</h1>
+            </div>
+        </div>
+
+        <!-- Cart - Main Content -->
+        <form class="container cart-flex">
+            <div class="cart-flex-left">
+                <div class="cart-flex-left__item">
+                    <img src="img/item3.jpg" alt="Photo 3" class="cart-flex-left__item-img">
+                    <h2 class="cart-flex-left__item-header">mango people<br>t-shirt</h2>
+                    <p class="cart-flex-left__item-price">Price: <span class="theme-color">$300</span></p>
+                    <p class="cart-flex-left__item-color">Color: Red</span></p>
+                    <p class="cart-flex-left__item-size">Size: XI</p>
+                    <p class="cart-flex-left__item-quantity">Quantity: <input type="number"
+                            class="cart-flex-left__item-quantity-input" value="2" min="0" max="9"></p>
+                    <img src="img/close-button.svg" alt="Close" class="cart-flex-left__item-close">
+                </div>
+                <div class="cart-flex-left__item">
+                    <img src="img/item7.jpg" alt="Photo 7" class="cart-flex-left__item-img">
+                    <h2 class="cart-flex-left__item-header">mango people<br>t-shirt</h2>
+                    <p class="cart-flex-left__item-price">Price: <span class="theme-color">$300</span></p>
+                    <p class="cart-flex-left__item-color">Color: Red</span></p>
+                    <p class="cart-flex-left__item-size">Size: XI</p>
+                    <p class="cart-flex-left__item-quantity">Quantity: <input type="number"
+                            class="cart-flex-left__item-quantity-input" value="2" min="0" max="9"></p>
+                    <img src="img/close-button.svg" alt="Close" class="cart-flex-left__item-close">
+                </div>
+                <div class="cart-flex-left__buttons">
+                    <button type="button" class="cart-flex-left__buttons-btn">Clear shopping cart</button>
+                    <button type="button" class="cart-flex-left__buttons-btn">Continue shopping</button>
+                </div>
+            </div>
+            <div class="cart-flex-right">
+                <div class="cart-flex-right__address">
+                    <h2 class="cart-flex-right__address-header">shipping address</h2>
+                    <input type="text" class="cart-flex-right__address-input" placeholder="Bangladesh">
+                    <input type="text" class="cart-flex-right__address-input" placeholder="State">
+                    <input type="text" class="cart-flex-right__address-input" placeholder="Postcode / ZIP">
+                    <button type="button" class="cart-flex-right__address-button">Get a quote</button>
+                </div>
+                <div class="cart-flex-right__submit">
+                    <h2 class="cart-flex-right__submit-subtotal">subtotal<span>$900</span></h2>
+                    <h2 class="cart-flex-right__submit-total">grand total<span class="theme-color">$900</span></h2>
+                    <hr class="cart-flex-right__submit-hr">
+                    <button class="cart-flex-right__submit-btn">proceed to checkout</button>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <!-- Free Delivery etc. -->
+        <div class="features">
+            <div class="container features-flex">
+                <div class="features-item">
+                    <img src="img/delivery.svg" alt="Delivery" class="features-icon-1">
+                    <h2 class="features-header">Free delivery</h2>
+                    <p class="features-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion
+                        with extensive models.</p>
+                </div>
+                <div class="features-item">
+                    <img src="img/sale.svg" alt="Sales" class="features-icon-2">
+                    <h2 class="features-header">Sales & discounts</h2>
+                    <p class="features-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion
+                        with extensive models.</p>
+                </div>
+                <div class="features-item">
+                    <img src="img/quality.svg" alt="Quality Assurance" class="features-icon-3">
+                    <h2 class="features-header">Quality assurance</h2>
+                    <p class="features-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion
+                        with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe -->
+        <div class="bottom-section">
+            <div class="container bottom-section-flex">
+                <div class="bottom-section-left">
+                    <img src="img/bottom-photo.png" alt="Photo" class="bottom-photo">
+                    <p class="bottom-text">“Vestibulum quis porttitor dui! Quisque<br>viverra nunc mi, <span
+                            class="bottom-italic">a pulvinar purus<br>condimentum</span>“</p>
+                </div>
+                <div class="bottom-section-right">
+                    <p class="bottom-right-header-top">Subscribe</p>
+                    <p class="bottom-right-header-bottom">for our newsletter and promotion</p>
+                    <form class="bottom-form">
+                        <p style="white-space: nowrap;"><input type="text" class="form-input"
+                                placeholder="Enter Your Email">
+                            <button type="submit" class="form-submit">Subscribe</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container footer-flex">
+                <div class="footer-left">
+                    <p class="footer-copyright">&copy; 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-icon-field">
+                        <img src="img/facebook-regular.svg" alt="Facebook" class="footer-icon">
+                    </div>
+                    <div class="footer-icon-field">
+                        <img src="img/instagram-regular.svg" alt="Instagram" class="footer-icon">
+                    </div>
+                    <div class="footer-icon-field">
+                        <img src="img/pinterest-regular.svg" alt="Pinterest" class="footer-icon">
+                    </div>
+                    <div class="footer-icon-field">
+                        <img src="img/twitter-regular.svg" alt="Twitter" class="footer-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="code.js"></script>
+</body>
+
+</html>
