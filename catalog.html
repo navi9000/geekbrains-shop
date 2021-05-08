@@ -16,44 +16,46 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-flex">
-            <div class="header-left">
-                <img src="img/logo.svg" alt="Logo" class="header-item" id="logo">
-                <img src="img/search-icon.svg" alt="Search" class="header-item">
+    <header class="b-header">
+        <div class="container b-navBar">
+            <div class="b-navBar__group">
+                <img src="img/logo.svg" alt="Logo" class="b-navBar__item b-navBar__item_logo">
+                <img src="img/search-icon.svg" alt="Search" class="b-navBar__item">
             </div>
-            <div class="header-right">
-                <img src="img/menu-icon.svg" alt="Menu" class="header-item" onclick="showMenu();">
-                <img src="img/user-icon.svg" alt="User" class="header-item" id="user-icon">
-                <img src="img/cart-icon.svg" alt="Cart" class="header-item" id="cart">
+            <div class="b-navBar__group">
+                <img src="img/menu-icon.svg" alt="Menu" class="b-navBar__item b-navBar__item_right"
+                    onclick="showMenu();">
+                <img src="img/user-icon.svg" alt="User"
+                    class="b-navBar__item b-navBar__item_right b-navBar__item_userIcon">
+                <img src="img/cart-icon.svg" alt="Cart" class="b-navBar__item b-navBar__item_right b-navBar__item_cart">
             </div>
         </div>
-        <div class="hidden-menu hidden">
-            <img src="img/close-button.svg" alt="Close" class="menu-close" onclick="hideMenu();">
-            <h2 class="menu-header">Menu</h2>
-            <h3 class="menu-subheader">Men</h3>
+        <div class="b-header__navMenu b-navMenu b-header__navMenu_hidden">
+            <img src="img/close-button.svg" alt="Close" class="b-navMenu__closeBtn" onclick="hideMenu();">
+            <h2 class="b-navMenu__header">Menu</h2>
+            <h3 class="b-navMenu__subheader">Men</h3>
             <ul>
-                <li class="menu-list"><a href="#" class="menu-link">Accessories</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Bags</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Denim</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">T-Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Bags</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Denim</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
             </ul>
-            <h3 class="menu-subheader">Women</h3>
+            <h3 class="b-navMenu__subheader">Women</h3>
             <ul>
-                <li class="menu-list"><a href="#" class="menu-link">Accessories</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Jackets & Coats</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Polos</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">T-Shirts</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Jackets & Coats</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Polos</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Shirts</a></li>
             </ul>
-            <h3 class="menu-subheader">Kids</h3>
+            <h3 class="b-navMenu__subheader">Kids</h3>
             <ul>
-                <li class="menu-list"><a href="#" class="menu-link">Accessories</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Jackets & Coats</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Polos</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">T-Shirts</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Shirts</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Bags</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Jackets & Coats</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Polos</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Bags</a></li>
             </ul>
         </div>
     </header>

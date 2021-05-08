@@ -1,0 +1,164 @@
+.registration-main {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+    @media (max-width: 1024px) {
+        margin-top: 40px;
+    }
+    @media (max-width: 667px) {
+        flex-direction: column;
+    }
+
+    &__form {
+        flex-basis: 40%;
+        margin-right: 128px;
+        @media (max-width: 1024px) {
+            flex-basis: 50%;
+            margin-right: 22px;
+        }
+        @media (max-width: 667px) {
+            margin-right: 0;
+        }
+
+        &-fieldset {
+            border: none;
+        }
+
+        &-legend {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: $background-dark;
+            margin-bottom: 20.5px;
+        }
+
+        &-label {
+            display: none;
+        }
+
+        .label-visible {
+            display: initial;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: $item-dark-text;
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+
+        &-input {
+            display: block;
+            width: 100%;
+            border: 1px solid #A4A4A4;
+            box-sizing: border-box;
+            padding: 12px 16.75px 15px;
+            margin-bottom: 21px;
+
+            &:nth-child(5) {
+                margin-bottom: 0;
+            }
+
+            &::placeholder {
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+        }
+
+        .radio-div {
+            display: flex;
+            align-content: center;
+            margin-top: 31.5px;
+            margin-bottom: 33px;
+        }
+
+        &-input-radio {
+            border: 1px solid #A4A4A4;
+            box-sizing: border-box;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            margin-top: 15.5px;
+            margin-bottom: 39px;
+        }
+
+        &-submit {
+            border: none;
+            background-color: $theme;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            padding: 16px 29px 17px;
+            cursor: pointer;
+        }
+    }
+
+    &__loyalty {
+        flex-basis: 60%;
+        @media (max-width: 1024px) {
+            flex-basis: 50%;
+        }
+
+        &-header {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 32px;
+            }
+            @media (max-width: 667px) {
+                margin-top: 40px;
+            }
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 21px;
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        &-list {
+            list-style-image: url(../img/tick.svg);
+            padding: 0;
+            margin: 0;
+        }
+
+        &-list-item {
+            margin-left: 27px;
+            box-sizing: border-box;
+            padding-left: 15px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 16px;
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

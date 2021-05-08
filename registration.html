@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/scss-style.css">
-    <title>Product</title>
+    <title>Registration</title>
 </head>
 
 <body>
@@ -60,94 +60,56 @@
     </header>
 
     <main>
-        <!-- Product - New Arrivals -->
+        <!-- Registration - Header Block -->
         <div class="catalog-arrivals">
-            <div class="container catalog-arrivals__flex">
-                <h1 class="catalog-arrivals__header">new arrivals</h1>
-                <p class="catalog-arrivals__breadcrumbs">home / men / <span class="theme-color breadcrumbs-bold">new
-                        arrivals</span></p>
+            <div class="container catalog-arrivals__flex cart-top">
+                <h1 class="catalog-arrivals__header">registration</h1>
             </div>
         </div>
 
-        <div class="product">
-
-            <!-- Product - Top Photo -->
-            <div class="product-top">
-                <img src="img/product-image.jpg" alt="Product" class="product-top__img">
-                <div class="product-top__left">
-                    <img src="img/product-arrow.svg" alt="Arrow" class="product-top__left-img">
-                </div>
-                <div class="product-top__right">
-                    <img src="img/product-arrow.svg" alt="Arrow" class="product-top__right-img">
-                </div>
-            </div>
-
-            <!-- Product - Description -->
-            <div class="product-desc container">
-                <h2 class="product-desc__top-header">Women collection</h2>
-                <hr class="product-desc__top-hr">
-                <h3 class="product-desc__bottom-header">Moschino cheap and chic</h3>
-                <p class="product-desc__text">Compellingly actualize fully researched processes before proactive
-                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
-                    Completely visualize parallel core competencies rather than exceptional portals.</p>
-                <p class="product-desc__price">$561</p>
-                <hr class="product-desc__bottom-hr">
-                <div class="product-desc__menu">
-                    <p class="product-desc__menu-dropdown">Choose color<img src="img/arrow-down.svg" alt="Down"
-                            class="product-desc__menu-dropdown-icon"></p>
-                    <p class="product-desc__menu-dropdown">Choose size<img src="img/arrow-down.svg" alt="Down"
-                            class="product-desc__menu-dropdown-icon"></p>
-                    <p class="product-desc__menu-dropdown">Quantity<img src="img/arrow-down.svg" alt="Down"
-                            class="product-desc__menu-dropdown-icon"></p>
-                </div>
-                <img src="img/product-add-to-cart.svg" alt="Cart" class="product-desc__cart">
-            </div>
-
-        </div>
-
-        <!-- Product - Items -->
-        <div class="catalog-items">
-            <div class="container">
-                <div class="items-grid">
-                    <div class="items-grid-item">
-                        <div class="items__image-div">
-                            <img src="img/item4.jpg" alt="Item 4" class="items-grid-img">
-                            <div class="items-grid__hover-background">
-                            </div>
-                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
-                        </div>
-                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
-                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="items-grid-price">$52.00</p>
+        <!-- Registration - Main Content -->
+        <div class="container registration-main">
+            <form class="registration-main__form">
+                <fieldset class="registration-main__form-fieldset">
+                    <legend class="registration-main__form-legend">Your name</legend>
+                    <label for="firstName" class="registration-main__form-label">First Name</label>
+                    <input class="registration-main__form-input" type="text" placeholder="First Name" id="firstName">
+                    <label for="lastName" class="registration-main__form-label">Last Name</label>
+                    <input class="registration-main__form-input" type="text" placeholder="Last Name" id="lastName">
+                    <div class="radio-div">
+                        <input class="registration-main__form-input-radio" type="radio" id="male" name="gender">
+                        <label for="male" class="registration-main__form-label label-visible">Male</label>
+                        <input class="registration-main__form-input-radio" type="radio" id="female" name="gender">
+                        <label for="female" class="registration-main__form-label label-visible">Female</label>
                     </div>
-                    <div class="items-grid-item">
-                        <div class="items__image-div">
-                            <img src="img/item3.jpg" alt="Item 3" class="items-grid-img">
-                            <div class="items-grid__hover-background">
-                            </div>
-                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
-                        </div>
-                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
-                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="items-grid-price">$52.00</p>
-                    </div>
-                    <div class="items-grid-item product-hide">
-                        <div class="items__image-div">
-                            <img src="img/item6.jpg" alt="Item 6" class="items-grid-img">
-                            <div class="items-grid__hover-background">
-                            </div>
-                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
-                        </div>
-                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
-                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="items-grid-price">$52.00</p>
-                    </div>
-                </div>
+                </fieldset>
+                <fieldset class="registration-main__form-fieldset">
+                    <legend class="registration-main__form-legend">Login details</legend>
+                    <label for="email" class="registration-main__form-label">Email</label>
+                    <input class="registration-main__form-input" type="email" placeholder="Email" id="email">
+                    <label for="password" class="registration-main__form-label">Password</label>
+                    <input class="registration-main__form-input" type="password" placeholder="Password" id="password"
+                        pattern="(((?=[A-Za-z0-9]*[a-z])(?=[A-Za-z0-9]*[A-Z])(?=[A-Za-z0-9]*[0-9]))|((?=[A-Za-z0-9]*[a-z])(?=[A-Za-z0-9]*[0-9])(?=[A-Za-z0-9]*[A-Z]))|((?=[A-Za-z0-9]*[A-Z])(?=[A-Za-z0-9]*[0-9])((?=[A-Za-z0-9]*[a-z]))))[A-Za-z0-9]{8,}">
+                    <p class="registration-main__form-text">Please use 8 or more characters, with at least 1 number and
+                        a mixture of uppercase and lowercase letters</p>
+                </fieldset>
+                <button type="submit" class="registration-main__form-submit">Join now &#129042;</button>
+            </form>
+            <div class="registration-main__loyalty">
+                <h2 class="registration-main__loyalty-header">Loyalty has its perks</h2>
+                <p class="registration-main__loyalty-text">Get in on the loyalty program where you can earn points and
+                    unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="registration-main__loyalty-list">
+                    <li class="registration-main__loyalty-list-item">15% off welcome offer</li>
+                    <li class="registration-main__loyalty-list-item">Free shipping, returns and exchanges on all orders
+                    </li>
+                    <li class="registration-main__loyalty-list-item">$10 off a purchase on your birthday</li>
+                    <li class="registration-main__loyalty-list-item">Early access to products</li>
+                    <li class="registration-main__loyalty-list-item">Exclusive offers & rewards</li>
+                </ul>
             </div>
         </div>
+
 
     </main>
 
