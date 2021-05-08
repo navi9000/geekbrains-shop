@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/scss-style.css">
+    <title>Product</title>
+</head>
+
+<body>
+    <header class="b-header">
+        <div class="container b-navBar">
+            <div class="b-navBar__group">
+                <img src="img/logo.svg" alt="Logo" class="b-navBar__item b-navBar__item_logo">
+                <img src="img/search-icon.svg" alt="Search" class="b-navBar__item">
+            </div>
+            <div class="b-navBar__group">
+                <img src="img/menu-icon.svg" alt="Menu" class="b-navBar__item b-navBar__item_right"
+                    onclick="showMenu();">
+                <img src="img/user-icon.svg" alt="User"
+                    class="b-navBar__item b-navBar__item_right b-navBar__item_userIcon">
+                <img src="img/cart-icon.svg" alt="Cart" class="b-navBar__item b-navBar__item_right b-navBar__item_cart">
+            </div>
+        </div>
+        <div class="b-header__navMenu b-navMenu b-header__navMenu_hidden">
+            <img src="img/close-button.svg" alt="Close" class="b-navMenu__closeBtn" onclick="hideMenu();">
+            <h2 class="b-navMenu__header">Menu</h2>
+            <h3 class="b-navMenu__subheader">Men</h3>
+            <ul>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Bags</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Denim</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
+            </ul>
+            <h3 class="b-navMenu__subheader">Women</h3>
+            <ul>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Jackets & Coats</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Polos</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Shirts</a></li>
+            </ul>
+            <h3 class="b-navMenu__subheader">Kids</h3>
+            <ul>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Jackets & Coats</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Polos</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Bags</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product - New Arrivals -->
+        <div class="catalog-arrivals">
+            <div class="container catalog-arrivals__flex">
+                <h1 class="catalog-arrivals__header">new arrivals</h1>
+                <p class="catalog-arrivals__breadcrumbs">home / men / <span class="theme-color breadcrumbs-bold">new
+                        arrivals</span></p>
+            </div>
+        </div>
+
+        <div class="product">
+
+            <!-- Product - Top Photo -->
+            <div class="product-top">
+                <img src="img/product-image.jpg" alt="Product" class="product-top__img">
+                <div class="product-top__left">
+                    <img src="img/product-arrow.svg" alt="Arrow" class="product-top__left-img">
+                </div>
+                <div class="product-top__right">
+                    <img src="img/product-arrow.svg" alt="Arrow" class="product-top__right-img">
+                </div>
+            </div>
+
+            <!-- Product - Description -->
+            <div class="product-desc container">
+                <h2 class="product-desc__top-header">Women collection</h2>
+                <hr class="product-desc__top-hr">
+                <h3 class="product-desc__bottom-header">Moschino cheap and chic</h3>
+                <p class="product-desc__text">Compellingly actualize fully researched processes before proactive
+                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                    Completely visualize parallel core competencies rather than exceptional portals.</p>
+                <p class="product-desc__price">$561</p>
+                <hr class="product-desc__bottom-hr">
+                <div class="product-desc__menu">
+                    <p class="product-desc__menu-dropdown">Choose color<img src="img/arrow-down.svg" alt="Down"
+                            class="product-desc__menu-dropdown-icon"></p>
+                    <p class="product-desc__menu-dropdown">Choose size<img src="img/arrow-down.svg" alt="Down"
+                            class="product-desc__menu-dropdown-icon"></p>
+                    <p class="product-desc__menu-dropdown">Quantity<img src="img/arrow-down.svg" alt="Down"
+                            class="product-desc__menu-dropdown-icon"></p>
+                </div>
+                <img src="img/product-add-to-cart.svg" alt="Cart" class="product-desc__cart">
+            </div>
+
+        </div>
+
+        <!-- Product - Items -->
+        <div class="catalog-items">
+            <div class="container">
+                <div class="items-grid">
+                    <div class="items-grid-item">
+                        <div class="items__image-div">
+                            <img src="img/item4.jpg" alt="Item 4" class="items-grid-img">
+                            <div class="items-grid__hover-background">
+                            </div>
+                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
+                        </div>
+                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
+                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="items-grid-price">$52.00</p>
+                    </div>
+                    <div class="items-grid-item">
+                        <div class="items__image-div">
+                            <img src="img/item3.jpg" alt="Item 3" class="items-grid-img">
+                            <div class="items-grid__hover-background">
+                            </div>
+                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
+                        </div>
+                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
+                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="items-grid-price">$52.00</p>
+                    </div>
+                    <div class="items-grid-item product-hide">
+                        <div class="items__image-div">
+                            <img src="img/item6.jpg" alt="Item 6" class="items-grid-img">
+                            <div class="items-grid__hover-background">
+                            </div>
+                            <img src="img/add-to-cart.svg" alt="Add to Cart" class="items-grid__add-button">
+                        </div>
+                        <h2 class="items-grid-header">ELLERY X M'O CAPSULE</h2>
+                        <p class="items-grid-text">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="items-grid-price">$52.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Free Delivery etc. -->
+        <div class="features">
+            <div class="container features-flex">
+                <div class="features-item">
+                    <img src="img/delivery.svg" alt="Delivery" class="features-icon-1">
+                    <h2 class="features-header">Free delivery</h2>
+                    <p class="features-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion
+                        with extensive models.</p>
+                </div>
+                <div class="features-item">
+                    <img src="img/sale.svg" alt="Sales" class="features-icon-2">
+                    <h2 class="features-header">Sales & discounts</h2>
+                    <p class="features-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion
+                        with extensive models.</p>
+                </div>
+                <div class="features-item">
+                    <img src="img/quality.svg" alt="Quality Assurance" class="features-icon-3">
+                    <h2 class="features-header">Quality assurance</h2>
+                    <p class="features-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion
+                        with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe -->
+        <div class="bottom-section">
+            <div class="container bottom-section-flex">
+                <div class="bottom-section-left">
+                    <img src="img/bottom-photo.png" alt="Photo" class="bottom-photo">
+                    <p class="bottom-text">“Vestibulum quis porttitor dui! Quisque<br>viverra nunc mi, <span
+                            class="bottom-italic">a pulvinar purus<br>condimentum</span>“</p>
+                </div>
+                <div class="bottom-section-right">
+                    <p class="bottom-right-header-top">Subscribe</p>
+                    <p class="bottom-right-header-bottom">for our newsletter and promotion</p>
+                    <form class="bottom-form">
+                        <p style="white-space: nowrap;"><input type="text" class="form-input"
+                                placeholder="Enter Your Email">
+                            <button type="submit" class="form-submit">Subscribe</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container footer-flex">
+                <div class="footer-left">
+                    <p class="footer-copyright">&copy; 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-icon-field">
+                        <img src="img/facebook-regular.svg" alt="Facebook" class="footer-icon">
+                    </div>
+                    <div class="footer-icon-field">
+                        <img src="img/instagram-regular.svg" alt="Instagram" class="footer-icon">
+                    </div>
+                    <div class="footer-icon-field">
+                        <img src="img/pinterest-regular.svg" alt="Pinterest" class="footer-icon">
+                    </div>
+                    <div class="footer-icon-field">
+                        <img src="img/twitter-regular.svg" alt="Twitter" class="footer-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="code.js"></script>
+</body>
+
+</html>
