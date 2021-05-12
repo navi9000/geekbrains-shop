@@ -174,6 +174,9 @@
                 margin-right: 16px;
                 margin-bottom: 0;
             }
+            @media (max-width: 667px) {
+                margin-right: 0;
+            }
 
             &-header {
                 font-weight: 300;
@@ -228,6 +231,10 @@
             @media (max-width: 1024px) {
                 flex-basis: 50%;
                 transform: translateY(55px);
+            }
+            @media (max-width: 667px) {
+                margin-top: 55px;
+                transform: unset;
             }
 
             &-subtotal {

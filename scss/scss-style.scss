@@ -1,9 +1,14 @@
 @import "res/variables";
 @import "res/setup";
-@import "blocks/header";
 @import "res/footer";
 @import "res/index";
 @import "res/catalog";
 @import "res/product";
 @import "res/cart";
 @import "res/registration";
+
+@import "blocks/header";
+@import "blocks/pageTitleBlock";
+@import "blocks/footerFeatures";
+@import "blocks/footerSubscribe";
+@import "blocks/footerContacts";

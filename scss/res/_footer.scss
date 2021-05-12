@@ -73,7 +73,7 @@
 // Subscribe
 
 .bottom-section {
-    background-image: url(../img/bottom-background.jpg);
+    background-image: url(#{$imagesPath}/bottom-background.jpg);
     background-size: cover;
     background-position-x: center;
     min-height: 448px;
@@ -143,6 +143,11 @@
                 color: $background-dark;
                 text-transform: uppercase;
             }
+
+            .bottom-form_p {
+                white-space: nowrap;
+            }
+
             .form-input {
                 display: inline-block;
                 background-color: #E1E1E1;
@@ -175,7 +180,7 @@
                 transition: background-color 1s ease;
 
                 &:hover {
-                    background-color: #E05C6E;
+                    background-color: #e05c6e7a;
                 }
             }
         }
