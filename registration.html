@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/scss-style.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <header class="b-header">
+        <div class="container b-navBar">
+            <div class="b-navBar__group">
+                <img src="img/logo.svg" alt="Logo" class="b-navBar__item b-navBar__item_logo">
+                <img src="img/search-icon.svg" alt="Search" class="b-navBar__item">
+            </div>
+            <div class="b-navBar__group">
+                <img src="img/menu-icon.svg" alt="Menu" class="b-navBar__item b-navBar__item_right"
+                    onclick="showMenu();">
+                <img src="img/user-icon.svg" alt="User"
+                    class="b-navBar__item b-navBar__item_right b-navBar__item_userIcon">
+                <img src="img/cart-icon.svg" alt="Cart" class="b-navBar__item b-navBar__item_right b-navBar__item_cart">
+            </div>
+        </div>
+        <div class="b-header__navMenu b-navMenu b-header__navMenu_hidden">
+            <img src="img/close-button.svg" alt="Close" class="b-navMenu__closeBtn" onclick="hideMenu();">
+            <h2 class="b-navMenu__header">Menu</h2>
+            <h3 class="b-navMenu__subheader">Men</h3>
+            <ul>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Bags</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Denim</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
+            </ul>
+            <h3 class="b-navMenu__subheader">Women</h3>
+            <ul>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Jackets & Coats</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Polos</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Shirts</a></li>
+            </ul>
+            <h3 class="b-navMenu__subheader">Kids</h3>
+            <ul>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Accessories</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Jackets & Coats</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Polos</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">T-Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Shirts</a></li>
+                <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Bags</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Registration - Page Title -->
+        <div class="b-pageTitleBlock">
+            <div class="container b-pageTitleBlock__flexWrapper b-pageTitleBlock__flexWrapper_noBreadcrumbs">
+                <h1 class="b-pageTitleBlock__pageTitle">registration</h1>
+            </div>
+        </div>
+
+        <!-- Registration - Main Content -->
+        <div class="container registration-main">
+            <form class="registration-main__form">
+                <fieldset class="registration-main__form-fieldset">
+                    <legend class="registration-main__form-legend">Your name</legend>
+                    <label for="firstName" class="registration-main__form-label">First Name</label>
+                    <input class="registration-main__form-input" type="text" placeholder="First Name" id="firstName">
+                    <label for="lastName" class="registration-main__form-label">Last Name</label>
+                    <input class="registration-main__form-input" type="text" placeholder="Last Name" id="lastName">
+                    <div class="radio-div">
+                        <input class="registration-main__form-input-radio" type="radio" id="male" name="gender">
+                        <label for="male" class="registration-main__form-label label-visible">Male</label>
+                        <input class="registration-main__form-input-radio" type="radio" id="female" name="gender">
+                        <label for="female" class="registration-main__form-label label-visible">Female</label>
+                    </div>
+                </fieldset>
+                <fieldset class="registration-main__form-fieldset">
+                    <legend class="registration-main__form-legend">Login details</legend>
+                    <label for="email" class="registration-main__form-label">Email</label>
+                    <input class="registration-main__form-input" type="email" placeholder="Email" id="email">
+                    <label for="password" class="registration-main__form-label">Password</label>
+                    <input class="registration-main__form-input" type="password" placeholder="Password" id="password"
+                        pattern="(((?=[A-Za-z0-9]*[a-z])(?=[A-Za-z0-9]*[A-Z])(?=[A-Za-z0-9]*[0-9]))|((?=[A-Za-z0-9]*[a-z])(?=[A-Za-z0-9]*[0-9])(?=[A-Za-z0-9]*[A-Z]))|((?=[A-Za-z0-9]*[A-Z])(?=[A-Za-z0-9]*[0-9])((?=[A-Za-z0-9]*[a-z]))))[A-Za-z0-9]{8,}">
+                    <p class="registration-main__form-text">Please use 8 or more characters, with at least 1 number and
+                        a mixture of uppercase and lowercase letters</p>
+                </fieldset>
+                <button type="submit" class="registration-main__form-submit">Join now &#129042;</button>
+            </form>
+            <div class="registration-main__loyalty">
+                <h2 class="registration-main__loyalty-header">Loyalty has its perks</h2>
+                <p class="registration-main__loyalty-text">Get in on the loyalty program where you can earn points and
+                    unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="registration-main__loyalty-list">
+                    <li class="registration-main__loyalty-list-item">15% off welcome offer</li>
+                    <li class="registration-main__loyalty-list-item">Free shipping, returns and exchanges on all orders
+                    </li>
+                    <li class="registration-main__loyalty-list-item">$10 off a purchase on your birthday</li>
+                    <li class="registration-main__loyalty-list-item">Early access to products</li>
+                    <li class="registration-main__loyalty-list-item">Exclusive offers & rewards</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <!-- Free Delivery etc. -->
+        <div class="b-footerFeatures">
+            <div class="container b-footerFeatures__flexWrapper">
+                <div class="b-featuresItem">
+                    <img src="img/delivery.svg" alt="Delivery" class="b-featuresItem__icon b-featuresItem__icon_1">
+                    <h2 class="b-featuresItem__header">Free delivery</h2>
+                    <p class="b-featuresItem__text">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov
+                        tion
+                        with extensive models.</p>
+                </div>
+                <div class="b-featuresItem">
+                    <img src="img/sale.svg" alt="Sales" class="b-featuresItem__icon b-featuresItem__icon_2">
+                    <h2 class="b-featuresItem__header">Sales & discounts</h2>
+                    <p class="b-featuresItem__text">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov
+                        tion
+                        with extensive models.</p>
+                </div>
+                <div class="b-featuresItem">
+                    <img src="img/quality.svg" alt="Quality Assurance"
+                        class="b-featuresItem__icon b-featuresItem__icon_3">
+                    <h2 class="b-featuresItem__header">Quality assurance</h2>
+                    <p class="b-featuresItem__text">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov
+                        tion
+                        with extensive models.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="b-footerSubscribe">
+            <div class="container b-footerSubscribe__flexWrapper">
+                <div class="b-footerSubscribe__flexItem b-photoAndQuote">
+                    <img src="img/bottom-photo.png" alt="Photo" class="b-photoAndQuote__photo">
+                    <p class="b-photoAndQuote__text">“Vestibulum quis porttitor dui! Quisque<br>viverra nunc mi, <span
+                            class="b-photoAndQuote__text b-photoAndQuote__text_italic">a pulvinar
+                            purus<br>condimentum</span>“</p>
+                </div>
+                <div class="b-footerSubscribe__flexItem b-footerFormSection">
+                    <p class="b-footerFormSection__header">Subscribe</p>
+                    <p class="b-footerFormSection__subheader">for our newsletter and promotion</p>
+                    <form class="b-footerFormSection__form">
+                        <p class="b-footerFormSection__formLine"><input type="text" class="b-footerFormSection__input"
+                                placeholder="Enter Your Email">
+                            <button type="submit" class="b-footerFormSection__submit">Subscribe</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="b-footerContacts">
+            <div class="container b-footerContacts__flexWrapper">
+                <div class="b-footerContacts__flexItem b-footerContacts__flexItem_left">
+                    <p class="b-footerContacts__copyright">&copy; 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="b-footerContacts__flexItem b-footerContacts__flexItem_right">
+                    <div class="b-footerContacts__iconField">
+                        <img src="img/facebook-regular.svg" alt="Facebook" class="b-footerContacts__icon">
+                    </div>
+                    <div class="b-footerContacts__iconField">
+                        <img src="img/instagram-regular.svg" alt="Instagram" class="b-footerContacts__icon">
+                    </div>
+                    <div class="b-footerContacts__iconField">
+                        <img src="img/pinterest-regular.svg" alt="Pinterest" class="b-footerContacts__icon">
+                    </div>
+                    <div class="b-footerContacts__iconField">
+                        <img src="img/twitter-regular.svg" alt="Twitter" class="b-footerContacts__icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="code.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.b-featuresItem {
+    &__icon {
+        &_1 {
+            margin-top: 103px;
+            margin-bottom: 28.07px;
+        }
+
+        &_2 {
+            margin-top: 104px;
+            margin-bottom: 19.07px;
+        }
+
+        &_3 {
+            margin-top: 103px;
+            margin-bottom: 25.07px;
+        }
+
+        @media (max-width: 1024px) {
+            margin-top: 48px;
+        }
+    }
+
+    &__header {
+        font-weight: 400;
+        font-size: 19.96px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        @media (max-width: 1024px) {
+            max-width: 348px;
+            margin: 0 auto;
+        }
+    }
+}
