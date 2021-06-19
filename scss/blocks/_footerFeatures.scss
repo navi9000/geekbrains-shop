@@ -1,0 +1,23 @@
+.b-footerFeatures {
+    min-height: 341px;
+    background-color: $background-dark;
+    @media (max-width: 1024px) {
+        min-height: 610px;
+    }
+
+    &__flexWrapper {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: $features-text;
+        gap: 30px;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            gap: 0;
+            box-sizing: border-box;
+            padding-bottom: 48px;
+        }
+    }
+}
+
+@import "featuresItem";

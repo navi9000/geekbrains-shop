@@ -1,0 +1,32 @@
+.b-footerSubscribe {
+    background-image: url(#{$imagesPath}/bottom-background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    min-height: 448px;
+    @media (max-width: 1024px) {
+        min-height: 693px;
+        background-position-x: 25%;
+    }
+    @media (max-width: 667px) {
+        min-height: 550px;
+    }
+
+    &__flexWrapper {
+        display: flex;
+        text-align: center;
+        gap: 30px;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+
+    &__flexItem {
+        width: 50%;
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+}
+
+@import "photoAndQuote";
+@import "footerFormSection";
