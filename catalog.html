@@ -10,7 +10,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="css/scss-style.css">
     <title>Catalog</title>
 </head>
@@ -27,7 +26,8 @@
                     onclick="showMenu();">
                 <img src="img/user-icon.svg" alt="User"
                     class="b-navBar__item b-navBar__item_right b-navBar__item_userIcon">
-                <img src="img/cart-icon.svg" alt="Cart" class="b-navBar__item b-navBar__item_right b-navBar__item_cart">
+                <img src="img/cart-icon.svg" alt="Cart" class="b-navBar__item b-navBar__item_right b-navBar__item_cart"
+                    onclick="toggleCart();">
             </div>
         </div>
         <div class="b-header__navMenu b-navMenu b-header__navMenu_hidden">
@@ -57,6 +57,12 @@
                 <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Shirts</a></li>
                 <li class="b-navMenu__listItem"><a href="#" class="b-navMenu__link">Bags</a></li>
             </ul>
+        </div>
+        <div class="b-header__cart b-cart">
+            <p class="b-cart__number b-cart__number_hidden"></p>
+            <div class="b-cart__cart-items b-cart__cart-items_hidden">
+                <div class="b-cart__total">TOTAL: $0.00</div>
+            </div>
         </div>
     </header>
 
@@ -90,7 +96,7 @@
 
                 <div class="items-grid">
                     <div class="items-grid-item">
-                        <div class="items__image-div">
+                        <div class="items__image-div" id="1">
                             <img src="img/item1.jpg" alt="Item 1" class="items-grid-img">
                             <div class="items-grid__hover-background">
                             </div>
@@ -102,7 +108,7 @@
                             arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="items-grid-price">$52.00</p>
                     </div>
-                    <div class="items-grid-item">
+                    <div class="items-grid-item" id="7">
                         <div class="items__image-div">
                             <img src="img/item7.jpg" alt="Item 7" class="items-grid-img">
                             <div class="items-grid__hover-background">
@@ -115,7 +121,7 @@
                             arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="items-grid-price">$52.00</p>
                     </div>
-                    <div class="items-grid-item">
+                    <div class="items-grid-item" id="3">
                         <div class="items__image-div">
                             <img src="img/item3.jpg" alt="Item 3" class="items-grid-img">
                             <div class="items-grid__hover-background">
@@ -128,7 +134,7 @@
                             arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="items-grid-price">$52.00</p>
                     </div>
-                    <div class="items-grid-item">
+                    <div class="items-grid-item" id="4">
                         <div class="items__image-div">
                             <img src="img/item4.jpg" alt="Item 4" class="items-grid-img">
                             <div class="items-grid__hover-background">
@@ -141,7 +147,7 @@
                             arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="items-grid-price">$52.00</p>
                     </div>
-                    <div class="items-grid-item">
+                    <div class="items-grid-item" id="8">
                         <div class="items__image-div">
                             <img src="img/item8.jpg" alt="Item 8" class="items-grid-img">
                             <div class="items-grid__hover-background">
@@ -154,7 +160,7 @@
                             arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="items-grid-price">$52.00</p>
                     </div>
-                    <div class="items-grid-item">
+                    <div class="items-grid-item" id="9">
                         <div class="items__image-div">
                             <img src="img/item9.jpg" alt="Item 9" class="items-grid-img">
                             <div class="items-grid__hover-background">
@@ -167,7 +173,7 @@
                             arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="items-grid-price">$52.00</p>
                     </div>
-                    <div class="items-grid-item">
+                    <div class="items-grid-item" id="10">
                         <div class="items__image-div">
                             <img src="img/item10.jpg" alt="Item 10" class="items-grid-img">
                             <div class="items-grid__hover-background">
@@ -180,7 +186,7 @@
                             arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="items-grid-price">$52.00</p>
                     </div>
-                    <div class="items-grid-item">
+                    <div class="items-grid-item" id="11">
                         <div class="items__image-div">
                             <img src="img/item11.jpg" alt="Item 11" class="items-grid-img">
                             <div class="items-grid__hover-background">
@@ -193,7 +199,7 @@
                             arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="items-grid-price">$52.00</p>
                     </div>
-                    <div class="items-grid-item">
+                    <div class="items-grid-item" id="12">
                         <div class="items__image-div">
                             <img src="img/item12.jpg" alt="Item 6" class="items-grid-img">
                             <div class="items-grid__hover-background">
@@ -291,6 +297,7 @@
         </div>
     </footer>
     <script src="code.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
